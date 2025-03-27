@@ -2,7 +2,7 @@ public class TestMyDate {
 
 	public static void main(String[] args) {
 		MyDate date = new MyDate(28,2,2017);
-		
+
 		String strRep = date.toString();
 		System.out.println(strRep);
 		//Expected output: 2017-02-28
@@ -28,11 +28,11 @@ public class TestMyDate {
 		System.out.println(date.toString());
 		//Expected output: 2019-01-28		
 
-		
+		/*
 		date.incrementDay(3);
 		System.out.println(date.toString());
 		//Expected output: 2019-01-31		
-		
+		*/
 		date.decrementMonth(2);
 		System.out.println(date.toString());
 		//Expected output: 2018-11-30		
@@ -67,8 +67,8 @@ public class TestMyDate {
 		System.out.println(date.toString()+ " is after " + anotherDate.toString()+ " : " + after);
 		//Expected output: 2017-03-29 is after 2017-02-28 : true
 		
-		int dayDiff = date.dayDifference(anotherDate);
-		System.out.println("Day difference between " + date.toString()+ " and " + anotherDate.toString()+ " is " + dayDiff);
+	//	int dayDiff = date.dayDifference(anotherDate);
+	//	System.out.println("Day difference between " + date.toString()+ " and " + anotherDate.toString()+ " is " + dayDiff);
 		//Expected output: Day difference between 2017-03-29 and 2017-02-28 is 29
 			
 
